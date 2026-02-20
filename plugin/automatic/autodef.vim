@@ -152,22 +152,22 @@ let s:atv_pb_en = 0
 "}}}1
 
 "Keys 快捷键{{{1
-amenu 9998.4.1 &Verilog.AutoDef.AutoDef()<TAB>                                   :call g:AutoDef()<CR>
-amenu 9998.4.2 &Verilog.AutoDef.AutoReg()<TAB>                                   :call g:AutoReg()<CR>
-amenu 9998.4.3 &Verilog.AutoDef.AutoWire()<TAB>                                  :call g:AutoWire()<CR>
-amenu 9998.4.4 &Verilog.AutoDef.KillAutoDef()<TAB>                               :call g:KillAutoDef()<CR>
-amenu 9998.4.5 &Verilog.AutoDef.KillAutoReg()<TAB>                               :call g:KillAutoReg()<CR>
-amenu 9998.4.6 &Verilog.AutoDef.KillAutoWire()<TAB>                              :call g:KillAutoWire()<CR>
-
-if !hasmapto(':call g:AutoReg()<ESC>')
-    map <S-F6>      :call g:AutoReg()<ESC>
-endif
-if !hasmapto(':call g:AutoWire()<ESC>')
-    map <S-F7>      :call g:AutoWire()<ESC>
-endif
-if !hasmapto(':call g:AutoDef()<ESC>')
-    map <S-F8>      :call g:AutoDef()<ESC>
-endif
+"amenu 9998.4.1 &Verilog.AutoDef.AutoDef()<TAB>                                   :call g:AutoDef()<CR>
+"amenu 9998.4.2 &Verilog.AutoDef.AutoReg()<TAB>                                   :call g:AutoReg()<CR>
+"amenu 9998.4.3 &Verilog.AutoDef.AutoWire()<TAB>                                  :call g:AutoWire()<CR>
+"amenu 9998.4.4 &Verilog.AutoDef.KillAutoDef()<TAB>                               :call g:KillAutoDef()<CR>
+"amenu 9998.4.5 &Verilog.AutoDef.KillAutoReg()<TAB>                               :call g:KillAutoReg()<CR>
+"amenu 9998.4.6 &Verilog.AutoDef.KillAutoWire()<TAB>                              :call g:KillAutoWire()<CR>
+"
+"if !hasmapto(':call g:AutoReg()<ESC>')
+"    map <S-F6>      :call g:AutoReg()<ESC>
+"endif
+"if !hasmapto(':call g:AutoWire()<ESC>')
+"    map <S-F7>      :call g:AutoWire()<ESC>
+"endif
+"if !hasmapto(':call g:AutoDef()<ESC>')
+"    map <S-F8>      :call g:AutoDef()<ESC>
+"endif
 "}}}1
 
 "AutoReg 自动寄存器{{{1

@@ -190,14 +190,14 @@ let s:st_prefix = repeat(' ',g:atv_ati_pos_st)         "start position prefix
 "}}}1
 
 "Keys 快捷键{{{1
-amenu 9998.2.1 &Verilog.AutoInst.AutoInst(0)<TAB>One                             :call g:AutoInst(0)<CR>
-amenu 9998.2.2 &Verilog.AutoInst.AutoInst(1)<TAB>All                             :call g:AutoInst(1)<CR>
-amenu 9998.2.3 &Verilog.AutoInst.KillAutoInst(0)<TAB>One                         :call g:KillAutoInst(0)<CR>
-amenu 9998.2.4 &Verilog.AutoInst.KillAutoInst(1)<TAB>All                         :call g:KillAutoInst(1)<CR>
-
-if !hasmapto(':call g:AutoInst(0)<ESC>')
-    map <S-F3>      :call g:AutoInst(0)<ESC>
-endif
+"amenu 9998.2.1 &Verilog.AutoInst.AutoInst(0)<TAB>One                             :call g:AutoInst(0)<CR>
+"amenu 9998.2.2 &Verilog.AutoInst.AutoInst(1)<TAB>All                             :call g:AutoInst(1)<CR>
+"amenu 9998.2.3 &Verilog.AutoInst.KillAutoInst(0)<TAB>One                         :call g:KillAutoInst(0)<CR>
+"amenu 9998.2.4 &Verilog.AutoInst.KillAutoInst(1)<TAB>All                         :call g:KillAutoInst(1)<CR>
+"
+"if !hasmapto(':call g:AutoInst(0)<ESC>')
+"    map <S-F3>      :call g:AutoInst(0)<ESC>
+"endif
 "}}}1
 
 "AutoInst 自动例化{{{1

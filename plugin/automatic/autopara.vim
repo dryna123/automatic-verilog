@@ -58,19 +58,19 @@ let s:st_prefix = repeat(' ',g:atv_autopara_st_pos)
 "}}}1
 
 "Keys 快捷键{{{1
-amenu 9998.3.1 &Verilog.AutoPara.AutoPara(0)<TAB>One                             :call g:AutoPara(0)<CR>
-amenu 9998.3.2 &Verilog.AutoPara.AutoPara(1)<TAB>All                             :call g:AutoPara(1)<CR>
-amenu 9998.3.3 &Verilog.AutoPara.AutoParaValue(0)<TAB>One                        :call g:AutoParaValue(0)<CR>
-amenu 9998.3.4 &Verilog.AutoPara.AutoParaValue(1)<TAB>All                        :call g:AutoParaValue(1)<CR>
-amenu 9998.3.5 &Verilog.AutoPara.KillAutoPara(0)<TAB>One                         :call g:KillAutoPara(0)<CR>
-amenu 9998.3.5 &Verilog.AutoPara.KillAutoPara(1)<TAB>All                         :call g:KillAutoPara(1)<CR>
-
-if !hasmapto(':call g:AutoPara(0)<ESC>')
-    map <S-F4>      :call g:AutoPara(0)<ESC>
-endif
-if !hasmapto(':call g:AutoParaValue(0)<ESC>')
-    map <S-F5>      :call g:AutoParaValue(0)<ESC>
-endif
+"amenu 9998.3.1 &Verilog.AutoPara.AutoPara(0)<TAB>One                             :call g:AutoPara(0)<CR>
+"amenu 9998.3.2 &Verilog.AutoPara.AutoPara(1)<TAB>All                             :call g:AutoPara(1)<CR>
+"amenu 9998.3.3 &Verilog.AutoPara.AutoParaValue(0)<TAB>One                        :call g:AutoParaValue(0)<CR>
+"amenu 9998.3.4 &Verilog.AutoPara.AutoParaValue(1)<TAB>All                        :call g:AutoParaValue(1)<CR>
+"amenu 9998.3.5 &Verilog.AutoPara.KillAutoPara(0)<TAB>One                         :call g:KillAutoPara(0)<CR>
+"amenu 9998.3.5 &Verilog.AutoPara.KillAutoPara(1)<TAB>All                         :call g:KillAutoPara(1)<CR>
+"
+"if !hasmapto(':call g:AutoPara(0)<ESC>')
+"    map <S-F4>      :call g:AutoPara(0)<ESC>
+"endif
+"if !hasmapto(':call g:AutoParaValue(0)<ESC>')
+"    map <S-F5>      :call g:AutoParaValue(0)<ESC>
+"endif
 "}}}1
 
 "AutoPara 自动参数{{{1

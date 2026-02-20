@@ -45,12 +45,12 @@ let s:st_prefix = repeat(' ',g:atv_autoarg_st_pos)
 "}}}1
 
 "Keys 快捷键{{{1
-amenu 9998.1.1 &Verilog.AutoArg.AutoArg()<TAB>                          :call g:AutoArg()<CR>
-amenu 9998.1.2 &Verilog.AutoArg.KillAutoArg()<TAB>                      :call g:KillAutoArg()<CR>
-
-if !hasmapto(':call g:AutoArg()<ESC>')
-    map <S-F2>      :call g:AutoArg()<ESC>
-endif
+"amenu 9998.1.1 &Verilog.AutoArg.AutoArg()<TAB>                          :call g:AutoArg()<CR>
+"amenu 9998.1.2 &Verilog.AutoArg.KillAutoArg()<TAB>                      :call g:KillAutoArg()<CR>
+"
+"if !hasmapto(':call g:AutoArg()<ESC>')
+"    map <S-F2>      :call g:AutoArg()<ESC>
+"endif
 "}}}1
 
 "AutoArg 自动声明{{{1
