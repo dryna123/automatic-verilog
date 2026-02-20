@@ -4,7 +4,7 @@
 
 ![logo](https://cdn.jsdelivr.net/gh/HonkW93/automatic-verilog@master/demo/logo.png)                                                                                   
 
-一款基于vimscript的自动化verilog脚本。由[automatic for Verilog & RtlTree](https://www.vim.org/scripts/script.php?script_id=4067)修改而来，原作者zhangguo。部分功能参考[Verilog-Mode](https://veripool.org/verilog-mode/)。
+一款基于vimscript的自动化verilog脚本。由[automatic for Verilog & RtlTree](https://www.vim.org/scripts/script.php?script_id=4067)修改而来，原作者zhangguo。部分功能参考[Verilog-Mode](https://veripool.org/verilog-mode/)。又在HonkW93的基础上修改，去除了快捷键。
 
 [![Release](https://img.shields.io/github/v/release/HonkW93/automatic-verilog?display_name=tag)](https://github.com/HonkW93/automatic-verilog/releases)[![Vim-Version](https://img.shields.io/badge/Vim-7.4.629-green.svg)](https://www.vim.org/download.php)[![License](https://img.shields.io/github/license/HonkW93/automatic-verilog)](https://github.com/HonkW93/automatic-verilog/blob/master/LICENSE)![stars](https://img.shields.io/github/stars/HonkW93/automatic-verilog)![forks](https://img.shields.io/github/forks/HonkW93/automatic-verilog)
 
