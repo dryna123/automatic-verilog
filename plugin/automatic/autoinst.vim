@@ -160,7 +160,7 @@ let g:_AUTOVERILOG_AUTOINST_DEFAULTS = {
             \'pos_lalgn':           1,
             \'pos_ralgn':           1,
             \'pos_comma':           0,
-            \'cmt_dir':             0,
+            \'cmt_dir':             1,
             \'cmt_dir_env':         0,
             \'cmt_delim':           ' //',
             \'cmt_iodir':           ' ',
@@ -253,7 +253,7 @@ function! g:AutoInst(mode)
         "Get idx3: line index of module
         let [mname,iname,idx1,idx2,idx3] = g:ATV_GetInstModName()
 
-        "Get io sequences {sequence : value}
+        "Get io sequences {sequence : 1alue}
         if has_key(modules,mname)
             let file = modules[mname]
             let dir = files[file]
@@ -1290,9 +1290,9 @@ function s:DrawIO(io_seqs,upd_io_names)
 
             "Draw IO by config
             if g:atv_ati_pos_comma == 0
-                let line = prefix.'.'.name.lbls.'('.lbrs.conn.rbls.')'.comma.rbrs
+                let line = prefix.'.'.name.lbls.'('.lbrs.name.rbls.')'.comma.rbrs
             else
-                let line = prefix.comma.'.'.name.lbls.'('.lbrs.conn.rbls.')'.rbrs
+                let line = prefix.comma.'.'.name.lbls.'('.lbrs.name.rbls.')'.rbrs
             endif
 
             "tail comment (iodir+instnew+ifname)
@@ -1302,10 +1302,13 @@ function s:DrawIO(io_seqs,upd_io_names)
             let usr_io_names = copy(upd_io_names)
 
             "iodir
+            "iodir + 位宽
             let iodir = value[2]
+            let width = value[8]  " 取出端口位宽 [31:0] / [8] 等
+
             if g:atv_ati_cmt_iodir != ''
-                "map input -> I output -> O inout -> IO interface -> IF
-                let iodir_dlist = ['input','output','inout','interface']    "default
+                " map input -> I output -> O inout -> IO interface -> IF
+                let iodir_dlist = ['input','output','inout','interface']
                 let iodir_list = split(g:atv_ati_cmt_iodir)
                 let idx = 0
                 while idx < len(iodir_list)
@@ -1314,7 +1317,12 @@ function s:DrawIO(io_seqs,upd_io_names)
                     endif
                     let idx = idx + 1
                 endwhile
-                let tcmt = tcmt.g:atv_ati_cmt_delim.iodir
+
+                " 拼接方向 + 位宽
+                let tcmt = tcmt . g:atv_ati_cmt_delim . iodir
+                if width != ''
+                    let tcmt = tcmt . '  ' . width
+                endif
             endif
 
             "inst new
